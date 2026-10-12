@@ -1,0 +1,11 @@
+# Binary files
+*.png binary
+*.ttf binary
+*.pem binary
+*.jpg binary
+*.bmp binary
+*.apk binary
+*.keystore binary
+*.idsig binary
+*.zip binary
+*.ico binary

@@ -1,0 +1,21 @@
+# tagmod-server configuration. Copy to config.toml; keep the real one out of git.
+
+# The e-reader sends it as "Authorization: Bearer <token>" (feed_token in TagMod/panel.txt).
+token = "change-me-to-a-long-random-string"
+# Behind a reverse proxy (Caddy, Coolify/Traefik) that terminates HTTPS.
+listen = "0.0.0.0:8765"
+timezone = "Europe/Madrid"
+# How many days ahead the agenda looks.
+calendar_days = 7
+
+# One block per calendar. Google Calendar: Settings > your calendar > "Secret address in iCal format".
+[[calendar]]
+name = "Personal"
+url = "https://calendar.google.com/calendar/ical/.../basic.ics"
+
+[tasks]
+# Markdown checklist: "- [ ] task" or "- [ ] 2026-10-09 task with a due date".
+file = "/data/tareas.md"
+# Optional Todoist: open tasks matching the filter.
+# todoist_token = "..."
+# todoist_filter = "today | overdue"

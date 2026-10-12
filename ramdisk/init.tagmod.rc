@@ -1,0 +1,5 @@
+# Imported from init.rc. Runs the TagMod setup and the power button daemon as root.
+service tagmod /system/bin/sh /tagmod/tagmod.sh
+    class main
+    user root
+    group root input

@@ -1,0 +1,6 @@
+out/
+backups/
+signing/
+/log/
+__pycache__/
+*.pyc
